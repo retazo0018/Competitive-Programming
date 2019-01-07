@@ -1,5 +1,4 @@
-s1 = input()
-s2 = input()
+s1,s2 = input().split()
 li1 = []
 li2 = []
 for i in range(len(s1)):
