@@ -15,6 +15,6 @@ for i in range(len(s)):
         res+=li2[x]
         x+=1
         flag=0
-    elif(flag==0 and s[i-1]!=" " and i!=1):
+    elif(flag==0 and s[i-1]!=" " and i!=0):
         res+=s[i]
 print(res)
