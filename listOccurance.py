@@ -8,7 +8,7 @@ for i in li:
         li2.append(i)
 for i in range(len(li2)):
     if(li.count(li2[i])>1):
-        temp.append(li.count(li2[i]))
+        temp.append(li2[i])
 if(len(temp)==0):
     print("unique")
 else:
