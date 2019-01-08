@@ -12,4 +12,5 @@ for i in range(len(li2)):
 if(len(temp)==0):
     print("unique")
 else:
-    print(sorted(temp))
+    for i in sorted(temp):
+        print(i,end=" ")
