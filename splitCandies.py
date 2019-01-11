@@ -1,8 +1,8 @@
-n = int(input())
+n1 = int(input())
 li = list(map(int,input().split()))
 re=0
 flag=0
-for j in range(n):
+for j in range(n1):
   for i in range(len(li)):
     if(li[i]>=1):
       re+=1
