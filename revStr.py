@@ -1,2 +1,3 @@
-string=input()
-print(string[::-1])
+s=input()
+for i in s.split():
+    print(i[::-1],end=" ")
