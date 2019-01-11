@@ -1,3 +1,6 @@
 s=input()
+res=''
 for i in s.split():
-    print(i[::-1],end=" ")
+    res+=i[::-1]
+    res+=" "
+print(res)
