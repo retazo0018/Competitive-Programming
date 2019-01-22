@@ -1,6 +1,6 @@
 s = input()
 temp = s
 if(temp[::-1]==s):
-    print("yes")
+    print("YES")
 else:
-    print("no")
+    print("NO")
