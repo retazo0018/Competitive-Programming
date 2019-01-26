@@ -1,5 +1,5 @@
 li = list(map(int,input()))
-res=''
+res=0
 for i in li:
-    res+=str(i*i)
-print(int(res))
+    res+=(i*i)
+print(res)
