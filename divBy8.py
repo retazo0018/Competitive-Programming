@@ -16,6 +16,7 @@ for i in range(len(li)):
         res+=li[j]
         if(recur(int(res))):
             flag=1
+        
     res=''
 if(flag==0):
     print("no")
