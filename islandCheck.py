@@ -1,12 +1,12 @@
 n = int(input())
-li = []
+li = [[0]*(n+2),[0]*(n+2)]
+print(li)
 c=0
 for i in range(n):
-    temp = input()
-    li.append(temp.split())
-for i in range(len(li)):
-    c+=li[i].count('1')
-if(c==1):
-    print(1)
-else:
-    print(0)
+  li.insert(-1,[0]+[int(x) for x in input().split()]+[0])
+print(li)
+for i in range(1,n+1):
+  for j in range(1,n+1):
+    if(li[i][j]==1 and [[[li[i-1][k],li[i][k],li[i+1][k]]for k in range(j-1,j+2)]==[0,0,0],[0,1,0],[0,0,0]]):
+      c+=1
+print(c)
