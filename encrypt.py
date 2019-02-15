@@ -2,7 +2,8 @@ dict1 = {}
 dict2 = {}
 x=97
 res=''
-a,b = map(str,input().split())
+a = input()
+b = input()
 for i in range(1,27):
   dict1[chr(x)] = i
   x+=1
@@ -17,5 +18,8 @@ for i in range(len(a)):
     res+=(dict2.get(t1+t2))
   else:
     t3 = (t1+t2)%26
-    res+=dict2.get(t3)
+    if(t3==0):
+      res+=dict2.get(26)
+    else:  
+      res+=dict2.get(t3)
 print(res)
